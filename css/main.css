@@ -507,7 +507,7 @@ img {
 .footer-social-icon {
 	fill: var(--primary-wight-color);
 }
-/* ---------------------------------- Footer Form ---------------------------------- */
+/* ---------------------------------- Форма подписки ---------------------------------- */
 .footer-form .btn {
 	display: inline-flex;
 	align-items: center;
@@ -724,8 +724,19 @@ img {
 	margin-bottom: 10px;
 
 	padding: 11px 12px;
+	padding-left: 42px;
 	width: 448px;
 	height: 40px;
+}
+
+.modal-label {
+	position: relative;
+}
+
+.modal-input-icon {
+	position: absolute;
+	left: 12px;
+	bottom: 0;
 }
 
 .modal-comment,
@@ -745,14 +756,31 @@ img {
 	resize: none;
 }
 
-.modal .text {
+.modal .text,
+.modal-comment,
+.modal-input {
 	margin-bottom: 4px;
 	font-size: 12px;
 	line-height: 1.66;
+	letter-spacing: 0.01em;
 }
 
-.input-conditions {
+.check-container {
 	margin-bottom: 30px;
+}
+
+.modal-agrea {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
+	color: var(--secondary-text-color);
+}
+
+.modal-link {
+	text-decoration: none;
+	color: var(--accent-color);
+	border-bottom: 1px solid;
 }
 
 .modal-btn-posicion {
