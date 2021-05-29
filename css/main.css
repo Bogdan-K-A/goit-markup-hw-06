@@ -523,9 +523,13 @@ img {
 
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	background: transparent;
+	outline: none;
+	color: var(--primary-wight-color);
+
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 }
+
 .form-btn-icon {
 	margin-left: 10px;
 }
