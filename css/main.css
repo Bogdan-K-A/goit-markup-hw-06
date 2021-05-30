@@ -781,15 +781,28 @@ img {
 }
 
 .check-container {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 30px;
-	text-align: center;
 }
 
 .modal-check {
-	-webkit-appearance: none;
+	/* -webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
+	appearance: none; */
+
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .modal-check:checked + .modal-check-icon {
@@ -801,13 +814,16 @@ img {
 }
 
 .modal-check-icon {
+	margin-right: 7px;
+
 	display: inline-block;
 	width: 16px;
 	height: 16px;
-	margin: 0;
-	/* background-color: var(--accent-color); */
 	border: 2px solid var(--primary-text-color);
-	border-radius: 4px;
+	border-radius: 2px;
+}
+.modal-check:focus + .modal-check-icon {
+	border-color: var(--accent-color);
 }
 
 .modal-agrea {
