@@ -712,6 +712,7 @@ img {
 	border-radius: 50%;
 }
 /* ------------------------------ Форма заказа ------------------------------ */
+
 .modal-form-title {
 	margin-bottom: 12px;
 
@@ -733,16 +734,26 @@ img {
 
 .modal-label {
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .modal-input-icon {
 	position: absolute;
 	left: 12px;
-	bottom: 0;
+	bottom: 21px;
+}
+
+.modal-comment:focus,
+.modal-input:focus,
+.modal-input:focus ~ .modal-input-icon {
+	fill: var(--accent-color);
+	border-color: var(--accent-color);
 }
 
 .modal-comment,
 .modal-input {
+	outline: none;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	box-sizing: border-box;
 	border-radius: 4px;
@@ -761,7 +772,7 @@ img {
 .modal .text,
 .modal-comment,
 .modal-input {
-	margin-bottom: 4px;
+	/* margin-bottom: 4px; */
 	font-size: 12px;
 	line-height: 1.66;
 	letter-spacing: 0.01em;
