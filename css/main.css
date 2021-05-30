@@ -781,20 +781,33 @@ img {
 }
 
 .check-container {
-	position: relative;
+	display: block;
 	margin-bottom: 30px;
-
-	padding: 0 11px 0 36px;
+	text-align: center;
 }
 
 .modal-check {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+}
 
-	position: absolute;
-	left: 14px;
-	bottom: 4px;
+.modal-check:checked + .modal-check-icon {
+	border-color: var(--accent-color);
+	background-color: var(--accent-color);
+	background-image: url(../img/icons/form/check.svg);
+	background-size: contain;
+	background-origin: border-box;
+}
+
+.modal-check-icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	/* background-color: var(--accent-color); */
+	border: 2px solid var(--primary-text-color);
+	border-radius: 4px;
 }
 
 .modal-agrea {

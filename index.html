@@ -459,13 +459,16 @@
         <span class="text">Комментарий</span>
         <textarea class="modal-comment" name="comment" rows="10" placeholder="Введите текст"></textarea>
       </label>
-      <div class="check-container">
-        <label>
-          <input class="modal-check" type="checkbox" name="conditions">
-          <span class="modal-agrea">Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия
-              договора</a></span>
-        </label>
-      </div>
+      <label class="check-container">
+        <input class="modal-check" type="checkbox" name="conditions">
+        <span class="modal-check-icon">
+          <!-- <svg class="modal-check-icon" width="16" height="16">
+            <use href="./img/icons/sprite.svg#check"></use>
+          </svg> -->
+        </span>
+        <span class="modal-agrea">Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия
+            договора</a></span>
+      </label>
       <div class="modal-btn-posicion">
         <button class="btn" type="submit">Отправить</button>
       </div>
