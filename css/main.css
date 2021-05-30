@@ -95,7 +95,9 @@ img {
 .address-link:hover,
 .address-link:focus,
 .contacts-icon:focus,
-.contacts-icon:hover {
+.contacts-icon:hover,
+.modal-btn-close:hover,
+.modal-btn-close:focus {
 	color: var(--accent-color);
 	fill: var(--accent-color);
 }
